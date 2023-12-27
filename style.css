@@ -4,14 +4,19 @@ blockquote {
     margin: 1.5em 10px;
     padding: 0.5em 10px;
     quotes: "\201C""\201D""\2018""\2019";
+}
+h1, h2, h3, blockquote {
     font-family: "Consolas";
 }
-h1{
-    font-family: "Consolas";
-}
-h2{
-    font-family: "Consolas";
-}
-h3{
-    font-family: "Consolas";
+@media (prefers-color-scheme: dark) {
+    /* Add your dark mode styles here */
+    blockquote {
+        background: #333;
+        border-color: #999;
+        color: #fff;
+    }
+    body {
+        background: #222;
+        color: #fff;
+    }
 }
